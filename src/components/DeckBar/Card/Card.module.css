@@ -1,0 +1,21 @@
+.one_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgb(255, 255, 255);
+  width: 70px;
+  padding: 0 10px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid black;
+
+  position: relative;
+  margin-bottom: -20px;
+}
+
+.card_text {
+  padding: 0;
+  margin: 5px 0 20px 0;
+}

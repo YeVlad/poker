@@ -1,0 +1,19 @@
+.disp {
+  height: 100vh;
+  justify-content: center;
+}
+
+.table-container {
+  height: 100vh;
+  position: fixed;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.deck-container {
+  top: 0;
+  right: 0;
+}

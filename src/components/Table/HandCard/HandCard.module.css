@@ -1,0 +1,15 @@
+.hand_card {
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 130px;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+
+.hand_card_text {
+  margin: 0;
+  padding-top: 9px;
+  font-size: 30px;
+}

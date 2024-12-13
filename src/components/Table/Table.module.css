@@ -1,0 +1,14 @@
+.play_area {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 40px 0;
+  justify-content: space-between;
+}
+
+.hand {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
