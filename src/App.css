@@ -1,5 +1,8 @@
+html {
+  background: #023f14;
+}
+
 .disp {
-  height: 100vh;
   justify-content: center;
 }
 

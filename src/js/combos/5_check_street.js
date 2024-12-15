@@ -9,5 +9,5 @@ export default function check_street(hand) {
       return false;
     }
   }
-  return proof == 5 ? true : false;
+  return proof == 5 ? currentChecker.cost : false;
 }

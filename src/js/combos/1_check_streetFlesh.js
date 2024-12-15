@@ -12,7 +12,8 @@ export default function check_streetFlesh(hand) {
         return false;
       }
     }
-    return proof == 5 ? true : false;
+
+    return proof == 5 ? currentChecker.cost : false;
   }
   return false;
 }

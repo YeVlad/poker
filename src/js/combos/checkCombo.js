@@ -1,32 +1,32 @@
 const ppp = [
   {
-    value: "3",
+    value: "2",
     mast: "1",
-    cost: 3,
+    cost: 2,
     key: "1,0",
   },
   {
-    value: "2",
+    value: "3",
     mast: "2",
     cost: 2,
     key: "2,1",
   },
   {
-    value: "6",
+    value: "4",
     mast: "3",
-    cost: 6,
+    cost: 10,
     key: "2,3",
   },
   {
     value: "5",
-    mast: "10",
-    cost: 5,
+    mast: "4",
+    cost: 10,
     key: "4,0",
   },
   {
-    value: "9",
-    mast: "24",
-    cost: 9,
+    value: "6",
+    mast: "1",
+    cost: 14,
     key: "12,0",
   },
 ];
@@ -44,23 +44,23 @@ import takeHigher from "./9_takeHigher";
 export default function checkCombo(hand) {
   if (hand.length > 0) {
     if (check_streetFlesh(hand)) {
-      console.log("streetFlesh");
+      return [8, check_streetFlesh(hand)];
     } else if (check_care(hand)) {
-      console.log("care");
+      return [7, check_care(hand)];
     } else if (check_fullHouse(hand)) {
-      console.log("fullHouse");
+      return [6, ...check_fullHouse(hand)];
     } else if (check_flesh(hand)) {
-      console.log("flesh");
+      return [5, check_flesh(hand)];
     } else if (check_street(hand)) {
-      console.log("street");
+      return [4, check_street(hand)];
     } else if (check_set(hand)) {
-      console.log("set");
+      return [3, check_set(hand)];
     } else if (check_doubleDouble(hand)) {
-      console.log("doubleDouble");
+      return [2, ...check_doubleDouble(hand)];
     } else if (check_double(hand)) {
-      console.log("double");
+      return [1, ...check_double(hand)];
     } else {
-      console.log(takeHigher(hand));
+      return [0, ...takeHigher(hand)];
     }
   }
 }

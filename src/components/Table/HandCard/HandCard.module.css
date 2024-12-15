@@ -1,11 +1,18 @@
 .hand_card {
   border: 1px solid black;
+
+  background: #ffffff;
+
   border-radius: 12px;
   width: 130px;
   height: 180px;
   display: flex;
   justify-content: space-between;
   padding: 0 14px;
+}
+
+.selected {
+  background: red;
 }
 
 .hand_card_text {
