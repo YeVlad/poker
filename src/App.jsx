@@ -4,8 +4,8 @@ import createNewDeck from "./js/createNewDeck.js";
 import fillHands from "./js/fillHands.js";
 import takeSomeCards from "./js/takeSomeCards.js";
 
-import Table from "./components/table/table.jsx";
-import DeckBar from "./components/deckBar/deckBar.jsx";
+import Table from "./components/Table/Table.jsx";
+import DeckBar from "./components/DeckBar/DeckBar.jsx";
 import checkCombo from "./js/combos/checkCombo.js";
 
 function App() {
