@@ -1,4 +1,4 @@
-import compareHands from "../../js/compareHands";
+import compareHands from "../../js/compareHands.js";
 import css from "./Results.module.css";
 
 export default function Results({ situation, turn }) {
